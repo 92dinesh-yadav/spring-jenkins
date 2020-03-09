@@ -1,0 +1,10 @@
+pipeline{
+    agent any 
+    stages {
+        stage("Git Checkout") {
+            steps {
+                git credentialsId: 'bf820a9c-ccf2-4045-b9c1-7c41df40ddcd', url: 'https://github.com/92dinesh-yadav/spring-jenkins'
+            }
+        }
+    }
+}
